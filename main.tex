@@ -1,7 +1,9 @@
 % !TEX TS-program = xelatex
-\documentclass[12pt]{beamer}
-\input{src/pkg}
-\input{src/fonts}
+\documentclass[11.5pt]{beamer}
+\usetheme{metropolis}
+\input{lib/pkg}
+\input{lib/fonts}
+
 
 \title{\huge{}}
 \author{Hsiu-Hsuan Yeh}
@@ -10,16 +12,24 @@
 
 \begin{document}
 \maketitle
-% \newpage% or \cleardoublepage
-% % \pdfbookmark[<level>]{<title>}{<dest>}
-% \pdfbookmark[section]{\contentsname}{toc}
-% \tableofcontents
-% \pagebreak
 
 
+\begin{frame}{Outline}
+\tableofcontents
+\end{frame}
 
 
-\begin{frame}{Reference}
+\begin{frame}{}
+\end{frame}
+
+
+\section{References}
+
+
+\begin{frame}[allowframebreaks]{}
+\renewcommand{\section}[2]{}%
+\bibliography{/Users/jackyyeh/Library/texmf/bibtex/bib/Zotero.bib}
+\end{frame}
 \end{frame}
 
 
